@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion design</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://i.pinimg.com/564x/07/64/93/076493a2282463d0572b6ddd1df96b88.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    
+    .task-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+    
+    .task {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+    
+    .task:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .task-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .task-priority {
+      padding: 4px 8px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    
+    .task-priority-high {
+      background-color: #ef5350;
+      color: #fff;
+    }
+    
+    .task-priority-medium {
+      background-color: #ab47bc;
+      color: #fff;
+    }
+    
+    .task-priority-low {
+      background-color: #66bb6a;
+      color: #fff;
+    }
+    
+    .task-deadline {
+      font-weight: bold;
+    }
+    
+    .task-labels {
+      margin-top: 5px;
+      font-style: italic;
+      color: rgb(0, 0, 0);
+    }
+    
+   
+    
+    .motion-picture {
+      width: 800px;
+      display: block;
+      margin: 50px auto;
+    }
+    
+    .task-block {
+      margin-bottom: 20px;
+    }
+    
+    .task-block:hover {
+      background-color: #f7cef5;
+    }
+    
+    .task-block:hover h3 {
+      color: #333;
+    }
+    
+    .task-block:hover p {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StyleQuest's Design Challenge Task</h1>
+  </header>
+  
+  <div class="task-list">
+    <div class="task-block">
+      <div class="task-header">
+        <div class="task-priority task-priority-high">High</div>
+        <div class="task-deadline">Deadline: 1 week</div>
+      </div>
+      <div class="task-labels">Labels: Design, Content, Creativity</div>
+      <h3>Content Creation and Design</h3>
+      <p><b>create visually appealing designs using your Creativity.</b></p>
+    </div>
+    
+    <div class="task-block">
+      <div class="task-header">
+        <div class="task-priority task-priority-high">High</div>
+        <div class="task-deadline">Deadline: 2 weeks</div>
+      </div>
+      <div class="task-labels">Labels: Development, Functionality</div>
+      <h3>Development and Functionality</h3>
+      <p><b>Develop designs and ensure smooth Functionality.</b></p>
+    </div>
+    
+    <div class="task-block">
+      <div class="task-header">
+        <div class="task-priority task-priority-medium">Medium</div>
+        <div class="task-deadline">Deadline: 3 weeks</div>
+      </div>
+      <div class="task-labels">Labels: Testing, Quality Assurance</div>
+      <h3>Testing and Quality Assurance</h3>
+      <p><b>Thoroughly test for any issues and test the quality.</b></p>
+    </div>
+    
+    <div class="task-block">
+      <div class="task-header">
+        <div class="task-priority task-priority-high">High</div>
+        <div class="task-deadline">Deadline: 1 day</div>
+      </div>
+      <div class="task-labels">Labels: Deployment, Launch, Go Live</div>
+      <h3>Deployment and Launch</h3>
+      <p><b>Prepare the website for deployment and launch the designs to the public.</b></p>
+    </div>
+    
+    <div class="task-block">
+      <div class="task-priority task-priority-low">Low</div>
+      <div class="task-deadline">Deadline: Ongoing</div>
+      <div class="task-labels">Labels: Maintenance, Updates, Support</div>
+      <h3>Ongoing Maintenance and Updates</h3>
+      <p><b>Regularly maintain and update the team to ensure its smooth operation.</b></p>
+    </div>
+  </div>
+
+  <video class="motion-picture" src="Video.mp4" controls autoplay loop></video>
+</body>
+</html>
